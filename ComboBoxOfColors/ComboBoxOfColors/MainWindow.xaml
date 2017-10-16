@@ -1,0 +1,47 @@
+﻿<Window x:Class="ComboBoxOfColors.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add New Project" Height="147" Width="300">
+  <Grid Margin="10">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="84*" />
+      <ColumnDefinition Width="194*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="27" />
+      <RowDefinition Height="27" />
+      <RowDefinition Height="10" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <Label x:Name="lblProjectName" Content="Name:" 
+           Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" />
+    <TextBox x:Name="txtProjectName" Height="23" 
+             Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" />
+
+    <Label x:Name="lblProjectColor" Content="Color:" 
+           Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" />
+    <ComboBox x:Name="cboProjectColor" Height="23" 
+              Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"
+              TextSearch.TextPath="ColorName">
+      <ComboBox.ItemTemplate>
+        <DataTemplate>
+          <StackPanel Orientation="Horizontal">
+            <Rectangle Width="10" Height="10" Margin="5,0" Stroke="Black" 
+                    VerticalAlignment="Center" StrokeThickness="1" 
+                    Fill="{Binding Path=FillColor}" />
+            <TextBlock Text="{Binding Path=ColorName}" />
+          </StackPanel>
+        </DataTemplate>
+      </ComboBox.ItemTemplate>
+    </ComboBox>
+
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" 
+                Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Bottom">
+      <Button x:Name="cmdSave" Content="Save" Height="23" Width="83" 
+              Margin="5,0,0,0" IsDefault="True" Click="cmdSave_Click" />
+      <Button x:Name="cmdCancel" Content="Cancel" Height="23" Width="83" 
+              Margin="5,0,0,0" IsCancel="True" Click="cmdCancel_Click" />
+    </StackPanel>
+  </Grid>
+</Window>

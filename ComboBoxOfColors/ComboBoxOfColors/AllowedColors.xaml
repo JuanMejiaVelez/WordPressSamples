@@ -1,0 +1,96 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xmlns:xlinq="clr-namespace:System.Xml.Linq;assembly=System.Xml.Linq">
+
+  <ObjectDataProvider x:Key="AllowedColors" 
+                      ObjectType="{x:Type xlinq:XElement}" MethodName="Parse">
+    <ObjectDataProvider.MethodParameters>
+      <system:String xml:space="preserve">
+<![CDATA[
+      <Colors>
+        <Color Brush="Bisque" Name="Bisque"/>
+        <Color Brush="BurlyWood" Name="Burly Wood"/>
+        <Color Brush="Chartreuse" Name="Chartreuse"/>
+        <Color Brush="Chocolate" Name="Chocolate"/>
+        <Color Brush="Coral" Name="Coral"/>
+        <Color Brush="Crimson" Name="Crimson"/>
+        <Color Brush="Cyan" Name="Cyan"/>
+        <Color Brush="DeepPink" Name="Deep Pink"/>
+        <Color Brush="DeepSkyBlue" Name="Deep Sky Blue"/>
+        <Color Brush="Fuchsia" Name="Fuchsia"/>
+        <Color Brush="Gainsboro" Name="Gainsboro"/>
+        <Color Brush="Gold" Name="Gold"/>
+        <Color Brush="GreenYellow" Name="GreenYellow"/>
+        <Color Brush="HotPink" Name="Hot Pink"/>
+        <Color Brush="IndianRed" Name="Indian Red"/>
+        <Color Brush="Khaki" Name="Khaki"/>
+        <Color Brush="Lavender" Name="Lavender"/>
+        <Color Brush="LawnGreen" Name="Lawn Green"/>
+        <Color Brush="LightBlue" Name="Light Blue"/>
+        <Color Brush="LightCoral" Name="Light Coral"/>
+        <Color Brush="LightGray" Name="Light Gray"/>
+        <Color Brush="LightGreen" Name="Light Green"/>
+        <Color Brush="LightPink" Name="Light Pink"/>
+        <Color Brush="LightSalmon" Name="Light Salmon"/>
+        <Color Brush="LightSeaGreen" Name="Light Sea Green"/>
+        <Color Brush="LightSkyBlue" Name="Light Sky Blue"/>
+        <Color Brush="LightSteelBlue" Name="Light Steel Blue"/>
+        <Color Brush="Lime" Name="Lime"/>
+        <Color Brush="LimeGreen" Name="Lime Green"/>
+        <Color Brush="Linen" Name="Linen"/>
+        <Color Brush="Magenta" Name="Magenta"/>
+        <Color Brush="MediumAquamarine" Name="Medium Aquamarine"/>
+        <Color Brush="MediumOrchid" Name="Medium Orchid"/>
+        <Color Brush="MediumPurple" Name="Medium Purple"/>
+        <Color Brush="MediumSeaGreen" Name="Medium Sea Green"/>
+        <Color Brush="MediumSlateBlue" Name="Medium Slate Blue"/>
+        <Color Brush="MediumSpringGreen" Name="Medium Spring Green"/>
+        <Color Brush="MediumTurquoise" Name="Medium Turquoise"/>
+        <Color Brush="MediumVioletRed" Name="Medium Violet Red"/>
+        <Color Brush="MistyRose" Name="Misty Rose"/>
+        <Color Brush="Moccasin" Name="Moccasin"/>
+        <Color Brush="NavajoWhite" Name="Navajo White"/>
+        <Color Brush="Olive" Name="Olive"/>
+        <Color Brush="OliveDrab" Name="Olive Drab"/>
+        <Color Brush="Orange" Name="Orange"/>
+        <Color Brush="OrangeRed" Name="Orange Red"/>
+        <Color Brush="Orchid" Name="Orchid"/>
+        <Color Brush="PaleGoldenrod" Name="Pale Goldenrod"/>
+        <Color Brush="PaleGreen" Name="Pale Green"/>
+        <Color Brush="PaleTurquoise" Name="Pale Turquoise"/>
+        <Color Brush="PaleVioletRed" Name="Pale Violet Red"/>
+        <Color Brush="PeachPuff" Name="PeachPuff"/>
+        <Color Brush="Peru" Name="Peru"/>
+        <Color Brush="Pink" Name="Pink"/>
+        <Color Brush="Plum" Name="Plum"/>
+        <Color Brush="PowderBlue" Name="Powder Blue"/>
+        <Color Brush="Red" Name="Red"/>
+        <Color Brush="RosyBrown" Name="Rosy Brown"/>
+        <Color Brush="RoyalBlue" Name="Royal Blue"/>
+        <Color Brush="Salmon" Name="Salmon"/>
+        <Color Brush="SandyBrown" Name="Sandy Brown"/>
+        <Color Brush="SeaGreen" Name="SeaGreen"/>
+        <Color Brush="Sienna" Name="Sienna"/>
+        <Color Brush="Silver" Name="Silver"/>
+        <Color Brush="SkyBlue" Name="Sky Blue"/>
+        <Color Brush="SlateBlue" Name="Slate Blue"/>
+        <Color Brush="SlateGray" Name="Slate Gray"/>
+        <Color Brush="SpringGreen" Name="Spring Green"/>
+        <Color Brush="SteelBlue" Name="Steel Blue"/>
+        <Color Brush="Tan" Name="Tan"/>
+        <Color Brush="Thistle" Name="Thistle"/>
+        <Color Brush="Tomato" Name="Tomato"/>
+        <Color Brush="Turquoise" Name="Turquoise"/>
+        <Color Brush="Violet" Name="Violet"/>
+        <Color Brush="Wheat" Name="Wheat"/>
+        <Color Brush="Yellow" Name="Yellow"/>
+        <Color Brush="YellowGreen" Name="Yellow Green"/>
+      </Colors>
+        ]]>
+      </system:String>
+      <xlinq:LoadOptions>PreserveWhitespace</xlinq:LoadOptions>
+    </ObjectDataProvider.MethodParameters>
+  </ObjectDataProvider>
+
+</ResourceDictionary>

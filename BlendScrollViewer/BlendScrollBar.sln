@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendScrollBar", "BlendScrollBar\BlendScrollBar.csproj", "{b44a98f6-4a10-44f1-82e0-f9ba504fdc29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B44A98F6-4A10-44F1-82E0-F9BA504FDC29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B44A98F6-4A10-44F1-82E0-F9BA504FDC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B44A98F6-4A10-44F1-82E0-F9BA504FDC29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B44A98F6-4A10-44F1-82E0-F9BA504FDC29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

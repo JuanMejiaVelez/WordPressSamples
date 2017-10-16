@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+// (c) Copyright Microsoft Corporation.
+// This source is subject to the Microsoft Public License (Ms-PL).
+// Please see http://go.microsoft.com/fwlink/?LinkID=131993 for details.
+// All other rights reserved.
+-->
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDC7605E-4B2E-41B8-A5F6-4FBFD7651AC9}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Windows.Controls</RootNamespace>
+    <AssemblyName>System.Windows.Controls.Extended</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>System.Windows.Controls.Extended.snk</AssemblyOriginatorKeyFile>
+    <GenerateExtensionManifest>true</GenerateExtensionManifest>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binaries\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Binaries\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>$(SolutionDir)Binaries\System.Windows.Controls.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calendar\CalendarEx.cs" />
+    <Compile Include="Calendar\CalendarExAutomationPeer.cs" />
+    <Compile Include="Calendar\CalendarExBlackoutDatesCollection.cs" />
+    <Compile Include="Calendar\CalendarExButton.cs" />
+    <Compile Include="Calendar\CalendarExButtonAutomationPeer.cs" />
+    <Compile Include="Calendar\CalendarExDateChangedEventArgs.cs" />
+    <Compile Include="Calendar\CalendarExDateRange.cs" />
+    <Compile Include="Calendar\CalendarExDayButton.cs" />
+    <Compile Include="Calendar\CalendarExDayButtonAutomationPeer.cs" />
+    <Compile Include="Calendar\CalendarExtensions.cs" />
+    <Compile Include="Calendar\CalendarExItem.cs" />
+    <Compile Include="Calendar\CalendarExMode.cs" />
+    <Compile Include="Calendar\CalendarExModeChangedEventArgs.cs" />
+    <Compile Include="Calendar\CalendarExSelectionMode.cs" />
+    <Compile Include="Calendar\DateTimeHelper.cs" />
+    <Compile Include="Calendar\DateTimeExTypeConverter.cs" />
+    <Compile Include="Calendar\SelectedDatesExCollection.cs" />
+    <Compile Include="Common\BindingEvaluator.cs" />
+    <Compile Include="Common\DockEx.cs" />
+    <Compile Include="Common\InteractionHelper.cs" />
+    <Compile Include="Common\ItemsControlHelper.cs" />
+    <Compile Include="Common\IUpdateVisualState.cs" />
+    <Compile Include="Common\NumericExtensions.cs" />
+    <Compile Include="Common\RoutedPropertyChangingExEventArgs.cs" />
+    <Compile Include="Common\RoutedPropertyChangingExEventHandler.cs" />
+    <Compile Include="Common\ScrollExtensions.cs" />
+    <Compile Include="Common\TypeConverters.cs" />
+    <Compile Include="Common\VisualStates.cs" />
+    <Compile Include="DatePicker\DatePickerEx.cs" />
+    <Compile Include="DatePicker\DatePickerEx.TestHook.cs" />
+    <Compile Include="DatePicker\DatePickerExAutomationPeer.cs" />
+    <Compile Include="DatePicker\DatePickerExDateValidationErrorEventArgs.cs" />
+    <Compile Include="DatePicker\DatePickerExFormat.cs" />
+    <Compile Include="DatePicker\DatePickerTextBox.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\generic.xaml">
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <DefaultStyle Include="Calendar\CalendarEx.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </DefaultStyle>
+  </ItemGroup>
+  <ItemGroup>
+    <DefaultStyle Include="Calendar\CalendarExItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </DefaultStyle>
+  </ItemGroup>
+  <ItemGroup>
+    <DefaultStyle Include="Calendar\CalendarExDayButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </DefaultStyle>
+  </ItemGroup>
+  <ItemGroup>
+    <DefaultStyle Include="Calendar\CalendarExButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </DefaultStyle>
+    <DefaultStyle Include="DatePicker\DatePickerEx.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </DefaultStyle>
+    <DefaultStyle Include="DatePicker\DatePickerTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </DefaultStyle>
+  </ItemGroup>
+  <ItemGroup>
+    <DefaultStyle Include="Common\Common.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </DefaultStyle>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight\v4.0\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="System.Windows.Controls.Extended.snk" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

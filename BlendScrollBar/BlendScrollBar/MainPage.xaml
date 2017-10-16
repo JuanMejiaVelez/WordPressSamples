@@ -1,0 +1,12 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    x:Class="BlendScrollBar.MainPage"
+    Width="640" Height="480">
+
+  <Grid x:Name="LayoutRoot" Background="White">
+    <ScrollBar Margin="8,0,25,8" VerticalAlignment="Bottom" Orientation="Horizontal" Style="{StaticResource BlendScrollBarStyle}"/>
+    <ScrollBar HorizontalAlignment="Right" Margin="0,8,8,25" Style="{StaticResource BlendScrollBarStyle}"/>
+  </Grid>
+</UserControl>

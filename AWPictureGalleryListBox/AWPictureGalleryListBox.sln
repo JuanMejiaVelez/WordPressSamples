@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWPictureGalleryListBox", "AWPictureGalleryListBox\AWPictureGalleryListBox.csproj", "{14b6625e-dc46-4578-aabc-90a21967e28e}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14B6625E-DC46-4578-AABC-90A21967E28E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B6625E-DC46-4578-AABC-90A21967E28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B6625E-DC46-4578-AABC-90A21967E28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B6625E-DC46-4578-AABC-90A21967E28E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
